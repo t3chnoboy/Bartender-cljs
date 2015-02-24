@@ -7,7 +7,7 @@
      [expedite-bartender.utils :refer [jsonp random-beer-pic]]
      [expedite-bartender.components :refer [navbar content]]))
 
-(defonce app-state (atom {:selected-brewery-id nil
+(defonce app-state (atom {:selected-brewery-id 1
                           :breweries []}))
 
 (defroute "/brewery/:id" {:as params}
